@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -49,6 +50,7 @@ class SecondRowComponent extends Component{
                                     <img src={song1.album.cover} alt="Cover" width={150} height={150}/>
                                     <p className='fw-bold'>Track: {song1.title} Artist: {song1.artist.name} </p>
                                 </div>
+                                <div className='text-center'><Button variant="outline-light">Play</Button></div>
 
                             </Col>
                         )

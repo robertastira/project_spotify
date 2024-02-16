@@ -1,11 +1,11 @@
 import { Component } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import SidebarComponent from './SidebarComponent';
 import SecondRowComponent from './SecondRowComponent';
 import ThirdRowComponent from './ThirdComponent';
-
+import PlayerBlock from './PlayerBlock';
 
 
 class FrontPageComponent extends Component{
@@ -58,6 +58,7 @@ class FrontPageComponent extends Component{
                                     <img src={song.album.cover} alt="Cover" width={150} height={150}/>
                                     <p className='fw-bold'>Track: {song.title} Artist: {song.artist.name} </p>
                                 </div>
+                                <div className='text-center'><Button variant="outline-light">Play</Button></div>
 
                             </Col>
                         )
@@ -67,6 +68,7 @@ class FrontPageComponent extends Component{
                   </Row>
                   <SecondRowComponent/>
                   <ThirdRowComponent/>
+                  <PlayerBlock/>
                 </Col>
             </Row>
             </Container>
