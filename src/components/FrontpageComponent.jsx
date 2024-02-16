@@ -58,7 +58,12 @@ class FrontPageComponent extends Component{
                                     <img src={song.album.cover} alt="Cover" width={150} height={150}/>
                                     <p className='fw-bold'>Track: {song.title} Artist: {song.artist.name} </p>
                                 </div>
-                                <div className='text-center'><Button variant="outline-light">Play</Button></div>
+                                <div className='text-center'><Button variant="outline-light" >Play</Button></div>
+                        {/*    onClick={() =>
+              dispatch({
+                type: 'SELECTED_SONG',
+                payload: data.artist.name,
+              }) */}
 
                             </Col>
                         )
