@@ -46,14 +46,14 @@ class FrontPageComponent extends Component{
             <Row className='bg-dark bg-gradient'>
             <SidebarComponent/>
             <Col>
-            <div className='d-flex flex-row justify-content-evenly'><p>TRENDING</p><p>PODCAST</p><p>MOOD AND GENRES</p><p>NEW RELEASES</p><p>DISCOVER</p></div>
-            <h2>Rock Classics</h2>
+            <div className='d-flex flex-row justify-content-evenly text-secondary'><p>TRENDING</p><p>PODCAST</p><p>MOOD AND GENRES</p><p>NEW RELEASES</p><p>DISCOVER</p></div>
+            <h2 className='ms-4'>Rock Classics</h2>
             <Row className='d-flex flex-row justify-content-evenly'>
                 {
                     this.state.songs.slice(0, 4).map((song)=> {
                         console.log("Song2:", song)
                         return (
-                                <Col md={2} lg={2} key={song.id}>
+                                <Col md={2} lg={2} key={song.id} className='mt-4'>
                                 <div>
                                     <img src={song.album.cover} alt="Cover" width={150} height={150}/>
                                     <p className='fw-bold'>Track: {song.title} Artist: {song.artist.name} </p>

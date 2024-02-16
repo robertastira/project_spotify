@@ -38,8 +38,8 @@ class ThirdRowComponent extends Component{
       render() {
         return (
             <>
-            <h2>Rap</h2>
-            <Row className='d-flex flex-row justify-content-evenly'>
+            <h2 className='ms-4'>Rap</h2>
+            <Row className='d-flex flex-row justify-content-evenly mt-4'>
                 {
                     this.state.songs2.slice(0, 4).map((song2)=> {
                         console.log("Metallica", song2)

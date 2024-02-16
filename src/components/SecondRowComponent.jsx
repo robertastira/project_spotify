@@ -38,8 +38,8 @@ class SecondRowComponent extends Component{
       render() {
         return (
             <>
-            <h2>Italian Rock</h2>
-            <Row className='d-flex flex-row justify-content-evenly'>
+            <h2 className='ms-4'>Italian Rock</h2>
+            <Row className='d-flex flex-row justify-content-evenly mt-4'>
                 {
                     this.state.songs1.slice(0, 4).map((song1)=> {
                         console.log("Song1:", song1)
