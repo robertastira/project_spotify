@@ -5,7 +5,7 @@ import { BookFill, HouseDoorFill } from "react-bootstrap-icons";
 
 function SidebarComponent() {
 return (
-    <Col md={2} lg={2} className="bg-black min-vh-100 d-flex flex-column justify-content-between">
+    <Col md={2} lg={2} className="bg-black d-flex flex-column justify-content-between">
         <div>
         <p>
         <img src='logo.png' alt="Logo" width={180} height={50} className="mt-3"/>
